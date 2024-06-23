@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ELDocs.tmbundle">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/codeigniter/user_guide_src/source/documentation/ELDocs.tmbundle.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
