@@ -335,7 +335,7 @@ class Search_model extends CI_Model
 						$group->group_end();
 					} else if ((isset($askingPrices['min_price'])) && ($askingPrices['min_price'] > 0)) {
 						$group = $db->group_start();
-						$group->where('prop.asking_price =', $askingPrices['min_price']);
+						$group->where('prop.asking_price >=', $askingPrices['min_price']);
 						$group->group_end();
 					}
 					break;
@@ -351,7 +351,7 @@ class Search_model extends CI_Model
 						$group->group_end();
 					} else if ((isset($askingCapRates['min_rate'])) && ($askingCapRates['min_rate'] > 0)) {
 						$group = $db->group_start();
-						$group->where('prop.asking_cap_rate =', $askingCapRates['min_rate']);
+						$group->where('prop.asking_cap_rate >=', $askingCapRates['min_rate']);
 						$group->group_end();
 					} 
 					break;
